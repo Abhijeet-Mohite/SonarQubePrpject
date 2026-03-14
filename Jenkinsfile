@@ -23,9 +23,9 @@ pipeline {
             steps {
                 sh """
                 mvn sonar:sonar \
-                -Dsonar.projectKey=sonar-demo \
+                -Dsonar.projectKey=SonarQubePrpject \
                 -Dsonar.host.url=http://43.205.194.232:9000 \
-                -Dsonar.login=admin
+                -Dsonar.login=squ_8a02ae75a406804fcc38a62b2ec7a8aa89ebb7a5
                 """
             }
         }
