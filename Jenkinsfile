@@ -7,12 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/Abhijeet-Mohite/SonarQubePrpject.git'
-            }
-        }
-
         stage('Build Project') {
             steps {
                 sh 'mvn clean compile'
